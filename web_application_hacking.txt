@@ -1,0 +1,53 @@
+WEB APPLICATION SECURITY
+------------------------
+
+* few companies want to disclose their vulenrabilities and breaches.so it is hard to find the state of web application security
+  CORE SECURITY PROBLEM --> users can submit arbitary input 
+
+EVOLUTION OF WEB APPLICATION SECURITY
+--------------------------------------
+
+OLD
+----
+* most of the websites are static 
+* information flow was one-way
+* no need of authentication
+* all users are treated same way
+* hackers --> modify the content , use websites bandwith and other resources
+
+NEW
+---
+* most of the websites are dynamic
+* information is flow is two way
+* authentication , login , registration 
+* different users are treated differently
+
+
+WEB APPLICATION SECURITY AND FLAWS
+----------------------------------- 
+* EACH WEB APPLICATION IS UNIQUE AND MAY CONTAIN UNIQUE VULNERABILITIES 
+* web application need to connect with various services locally where they exist
+* New attacks have been conceived that were not considered when existing applications were developed. 
+* As client side application is outside of control users can submit arbitary information to the server side application 
+* users can tweak the data --> body , header , request url , cookies 
+* any security precautions implemented in the client side can be easily broken 
+* Users can send requests in any sequence and can submit parameters at a different stage than the application expects, more than once, or not at all 
+* The majority of attacks against web applications involve sending input to the server that is crafted to cause some event that was not expected or desired by the application’s designer.  
+* removing , modifying , order , quantity  
+* web applications must accept and process UNTRUSTED DATA   
+* attack against users vs attack against the servers 
+
+    EVERY ASPECT OF THE USERS INTERACTION WITH THE WEBSITE CAN BE MALICIOUS 
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
