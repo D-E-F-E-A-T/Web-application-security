@@ -1,0 +1,16 @@
+XSS - CROSS SITE SCRIPTING
+--------------------------
+The basic idea is executing javascript in victim's browser.
+
+
+CONTEXT
+-------
+* Attribute --> Attribute context 
+* Tag --> inserting script tags
+
+
+
+
+
+
+

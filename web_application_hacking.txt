@@ -2,7 +2,7 @@ WEB APPLICATION SECURITY
 ------------------------
 
 * few companies want to disclose their vulenrabilities and breaches.so it is hard to find the state of web application security
-  CORE SECURITY PROBLEM --> users can submit arbitary input 
+*  CORE SECURITY PROBLEM --> users can submit arbitary input 
 
 EVOLUTION OF WEB APPLICATION SECURITY
 --------------------------------------
@@ -41,6 +41,141 @@ WEB APPLICATION SECURITY AND FLAWS
 
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
+CORE DEFENSE MECHANISM
+----------------------
+* Handling user access - data + functionality
+* Handling user Input  - malformatted input to cause some trouble
+* Handling attacks     - precautions for attack 
+
+
+HANDLING USER ACCESS 
+--------------------
+* anonyomous users
+* authenticated users
+* administrative users
+
+* authentication
+* session management
+* access control
+
+---------------------------------------------------------------------------------------------------------
+
+AUTHENTICATIONS
+---------------
+* user_name and password --> checks for whether the user exist or not 
+
+SESSION MANAGEMENT
+------------------
+* managing requests of authenticated users 
+* When a user receives a token, the browser automatically submits it back to the server in each subsequent HTTP request, enabling 
+  the application to associate the request with that user. 
+* resubmitting users credentials on each and every request
+
+  METHODS OF TRANSMITTING COOKIES
+  -------------------------------
+  * url - query string
+  * body - hidden form_field
+  * http headers
+
+ACCESS CONTROL -- complicated to implement -- so easy to attack
+---------------
+* whether each individual request must be permitted or not 
+* using identity of the user , server have to decide whether certain access is permitted or not 
+* An application might support numerous user roles, each involving different combinations of specific privileges. 
+
+---------------------------------------------------------------------------------------------------------------------------
+
+HANDLING USER INPUT -- all user input is untrusted
+-------------------
+* Reject known bad --> not feasible  
+* Accept known good --> feasible
+* Sanitization --> accept and remove vulnerable input 
+* Boundary Validataion --> every application must check for its own input for vulenrabilities 
+* Multistep Validataion and Canonicalization
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+HANDLING ATTACKERS
+------------------
+* frustating the hacker 
+* Handling erros
+* maintaining audit logs 
+* reacting to attacks --> slow website , login again 
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+WEB APPLICATION TECHNOLOGIES
+----------------------------
+
+HTTP - hypertext transfer protocol
+----------------------------------
+* message based model
+* client - request
+* server - response 
+
+
+METHODS
+-------
+* GET  - retrive information
+* PUT  - update resource
+* POST  - create resource
+* DELETE - delete resource 
+* PATCH - partially update resource 
+* HEAD  - get with no response body - check whether a resource is exists or not
+* OPTIONS - available http methods for a particular resource
+* TRACE - it would send the exact request in the response body - used to detect proxies inbetween the server and the client
+
+
+STATUS CODES
+------------
+* 1xx - informational
+* 2xx - success 
+* 3xx - redirection 
+* 4xx - client error 
+* 5xx - server error 
+
+
+HEADERS
+--------
+referer -  from where the url orginated
+user-agent - the clients browser information
+host - website name , shared hosting on a single server 
+cookie - additional parameters server has issued to the client 
+server - http server name 
+set-cookie - cookies to resumbit with every request
+pragma - cache response or not 
+expires - when the resource expires 
+content-type - content type returned in the body 
+content-length - length of the document 
+
+
+REQUEST 
+-------
+* method - url - http_version
+* http headers
+* blank line
+* body
+* get request has no body 
+
+
+RESPONSE 
+--------
+* http_version - status_code - status_description 
+* headers 
+* body 
+
+
+COOKIES
+-------
+* The cookie mechanism enables the server to send items of data to the client, which the client stores and resubmits to the server.  
+
+cookie related headers
+----------------------
+expires --> expiry date of a cookie 
+domain  --> cookie which is valid for particular domain 
+path    --> cookie only valid for particular path 
+secure  --> cookie only submitted in https 
+HttpOnly --> we cannot access cookie via javascript 
+g
 
 
 
